@@ -1,0 +1,236 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt,oneside]{article}
+\usepackage{multicol}
+%\documentclass[letterpaper,10pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVTitle}{Cody Haas's Resume}
+\newcommand{\CVNote}{Resume compiled on {\today}}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={Cody Haas},
+pdfcreator={ShareLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Cody Haas}
+
+\begin{subtitle}
+\large{Lexington Park, Maryland}
+\par
+\href{mailto:codymhaas@gmail.com}
+{CodyMHaas@gmail.com}
+\,\BulletSymbol\,
+\,(631)\,742-4173
+\,
+\end{subtitle}
+\begin{body}
+
+\section
+{Clearance}
+{Clearance}
+{PDF:Clearance}
+{\textbf{US Department of Defense}} Secret
+\hfill
+\DatestampYMD{2016}{05}{18} --
+Present
+\par
+Active
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{http://www.hood.edu}
+{\textbf{Hood College}},
+Frederick, Maryland, USA
+\hfill
+\DatestampYMD{2011}{08}{18} --
+\DatestampYMD{2016}{01}{01}
+\par
+Bachelor of Arts in
+\href{http://http://www.hood.edu/math/}
+{Mathematics}
+\begin{detail}
+\BulletItem
+Relevant Coursework: Differential Equations, Modeling and Simulations, Number Theory, Computer Science, Electricity and Magnetism, Modern Physics, Chemistry, Applied Statistics, Multivariable Calculus, Linear Algebra
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+{\textbf{AMEWAS, INC.}},
+California, Maryland, USA
+\hfill
+\DatestampYMD{2016}{05}{09} --
+Present
+\par
+Software \& Test Support Engineer
+\begin{detail}
+\BulletItem
+Supports Electronic Combat Stimulation Branch (ECSTIM) at the Air Combat and Test Evaulation Facility (ACETEF) as a software engineer.
+\BulletItem
+Works with fellow software engineers, test engineers, and customers to generate test requirements, develop test plans, and conduct electronic combat systems testing.
+\BulletItem
+Contributes to the development, maintenance, and operation of the Multi-Jammer Capability Assessment system(MJC); a cable-cam subsystem of the Next Generation Electronic Warfare Environment Generator Block A(NEWEG-A).
+\BulletItem
+Develops software features to perform real time kinematic algorithms and 3D geometric calculations for MJC's multiple physical positioners.
+\BulletItem
+Develops software to interface with RF equipment, process and analyze RF data, ease test matrix automation, and produce data-products for users. 
+\BulletItem
+Developer on the Measurement And Analysis (MAA) software team (NEWEG-B). Develops real-time data analytic tools for Pulse Descriptive Word (PDW) analysis and interfaces for multiple NEWEG-B subsystems.
+\BulletItem
+Subject Matter Expert (SME) for ECSTIM's Distributed Aperture Infrared Countermeasure (DAIRCM) test team's real time Data Acquisition Unit (DAU); a subsystem created and provided by the U.S Naval Research Laboratory (NRL).
+\BulletItem
+Works with customers, test conductors, and fellow engineers to train, troubleshoot, operate, and provide support for the DAU during DAIRCM live flight testing.
+\end{detail}
+
+{\textbf{Department of Mathematics}},
+Hood College
+\hfill
+\DatestampYMD{2015}{08}{24} --
+\DatestampYMD{2015}{12}{13}
+\par
+Undergraduate Senior Research, Department of Mathematics
+\begin{detail}
+\BulletItem
+Project:
+On the relationship between Mathematicians and Physicists
+\BulletItem
+Supervisor:
+Dr James Parson
+\BulletItem
+Research areas:
+History of Mathematics, Special Relativity, General Relativity
+\end{detail}
+
+{\textbf{S\&L Irrigation}},
+Southold, New York, USA
+\hfill
+\DatestampYMD{2011}{05}{15} --
+\DatestampYMD{2015}{08}{15}
+\par
+Irrigation Service Technician
+\begin{detail}
+\BulletItem
+Supervised a crew during the installation, repair, and maintenance of automated lawn irrigation systems
+\BulletItem
+Development knowledge of electrical and hydraulic systems
+\end{detail}
+
+
+\section
+{Awards}
+{Awards}
+{PDF:Awards}
+
+{\textbf{Pi Mu Epsilon}} National Honorary Mathematics Society
+\hfill
+\DatestampYMD{2016}{06}{30}
+
+{\textbf{AMEWAS Inc.}} Bravo-Zulu Award
+\hfill
+\DatestampYMD{2017}{07}{25}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+\section
+{Skills}
+{Skills}
+{PDF:Skills} 
+\begin{multicols}{2}
+\par
+    \begin{itemize}
+        \item {\LaTeX}, Doxygen
+        \item MATLAB, JAVA, C++, C, Git, Redmine
+        \item SCPI, D-Bus, UDP/TCP, Google Protocol Buffers
+        \item Qt 5+, HDF5 C Library, Eigen, Python
+        \item Ubuntu Server \& Desktop, RHEL 6 \& 7, MacOS, Windows 7 \& 10
+        \item CSV, XML, Hierarchical Data Formats
+        \item Agile-Scrum Software Development
+        \item Unit Testing, Multithreading, Data Visualization
+        \item Computer Systems Development
+        \item XCode, Visual Studio, QtCreator
+        \item Organized, Detail Orientated, Leadership
+    \end{itemize}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+\section
+{References}
+{References}
+{PDF:References}
+
+References available upon request
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MULTILINGUAL UNICODE EXAMPLES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{LastPage}~
+\end{body}
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+\end{document}
